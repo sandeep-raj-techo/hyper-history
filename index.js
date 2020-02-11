@@ -177,7 +177,7 @@ function reset() {
 }
 
 function grepHistory() {
-    fs.readFile(path.join(process.env['HOME'], '.bash_history'), (err, data) => {
+    fs.readFile(path.join(process.env['HOME'], '.zsh_history'), (err, data) => {
         if (!err) {
             let history = data.toString();
             let set = {};
